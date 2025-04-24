@@ -332,3 +332,28 @@ body.dark-mode .edu-card p {
         align-items: center;
     }
 }
+
+/* Responsive Menu with Icons */
+@media (max-width: 768px) {
+    .main-content.home-flex {
+        flex-direction: column;
+    }
+
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-nav a .menu-text {
+        display: none;
+    }
+
+    .top-nav a {
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .header-title {
+        font-size: 1.2rem;
+    }
+}
