@@ -345,13 +345,13 @@ body.dark-mode .edu-card p {
   }
 
   .header-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     flex-grow: 1;
   }
 
   header {
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   footer h3 {
