@@ -323,30 +323,38 @@ body.dark-mode .edu-card p {
 
 /*Tampilan Mobile*/
 @media (max-width: 768px) {
-    /* 1. Menu hanya ikon, berdekatan di pojok kanan atas */
+    /* 1. Menu hanya ikon, rapat di pojok kanan atas */
+    .top-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     .top-nav a {
-        font-size: 0; /* Sembunyikan teks */
-        margin-right: 0.5rem; /* Perkecil jarak antar ikon */
+        font-size: 0; /* Hilangkan teks */
+        margin-right: 0.5rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
+        width: 40px;
+        height: 40px;
     }
 
-    .top-nav a::before {
-        font-size: 1.2rem;
-        content: attr(data-icon); /* Gunakan atribut custom untuk ikon */
-        font-family: 'FontAwesome', sans-serif; /* Pastikan menggunakan ikon font */
-        color: inherit;
+    /* Sembunyikan elemen teks menu */
+    .top-nav .menu-text {
+        display: none;
     }
 
-    /* 2. Ukuran teks WebsiArif lebih kecil */
+    .top-nav i {
+        font-size: 1.2rem; /* Ukuran ikon */
+    }
+
+    /* Ukuran teks title lebih kecil */
     .header-title {
         font-size: 1.1rem;
     }
 
-    /* 3. Kotak home (info & slideshow) di tengah dan presisi */
+    /* Home section di tengah */
     .main-content.home-flex {
         flex-direction: column;
         align-items: center;
