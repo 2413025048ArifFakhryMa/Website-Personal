@@ -355,14 +355,50 @@ body.dark-mode .edu-card p {
     }
 
     /* Home section di tengah */
-    .main-content.home-flex {
-        flex-direction: column;
-        align-items: center;
-    }
+    
+}
+@media (max-width: 768px) {
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
 
-    .info-box,
-    .slideshow-box {
-        width: 90%;
-        max-width: 400px;
-    }
+  .top-nav a,
+  #darkToggle {
+    font-size: 1.3rem; /* ukuran ikon sama seperti footer */
+    width: auto;
+    height: auto;
+    padding: 0.3rem;
+    color: #005fa3;
+  }
+
+  .top-nav .menu-text {
+    display: none;
+  }
+
+  .header-title {
+    font-size: 1.1rem;
+    flex-grow: 1;
+  }
+
+  header {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  footer h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .main-content.home-flex {
+      flex-direction: column;
+      align-items: center;
+  }
+  .info-box,.slideshow-box {
+      width: 90%;
+      max-width: 400px;
+  }
 }
