@@ -321,40 +321,14 @@ body.dark-mode .edu-card p {
     color: #ddd;
 }
 
-/* Tampilan Mobile*/
+/* Responsive */
 @media (max-width: 768px) {
-    .main-content.home-flex {
-        flex-direction: column;
-    }
+    .main-content.home-flex {
+        flex-direction: column;
+    }
 
-    .education-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .top-nav {
-        display: flex;
-        justify-content: center; /* Pusatkan menu */
-        gap: 0.3rem; /* Jarak antar ikon lebih kecil */
-        flex: 1;
-    }
-
-    .top-nav .menu-text {
-        display: none; /* Sembunyikan teks menu */
-    }
-
-    .top-nav a {
-        padding: 0.5rem;
-        font-size: 1.2rem; /* Ikon tetap terlihat jelas */
-    }
-
-    header {
-        flex-wrap: wrap; /* Agar item bisa turun ke bawah jika perlu */
-    }
-
-    #darkToggle {
-        order: 2;
-        margin-left: auto;
-        margin-right: 0;
-    }
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
