@@ -323,47 +323,50 @@ body.dark-mode .edu-card p {
 
 /*Tampilan Mobile*/
 @media (max-width: 768px) {
-  .top-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0.3rem;
-    flex-wrap: nowrap;
-  }
+  .top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.5rem; /* Sesuaikan jarak antar ikon seperti di footer */
+    flex-wrap: nowrap;
+  }
 
-  .top-nav a,
-  #darkToggle {
-    font-size: 1.3rem; /* ukuran ikon sama seperti footer */
-    width: auto;
-    height: auto;
-    padding: 0.2rem;
-    color: #005fa3;
-  }
+  .top-nav a,
+  #darkToggle {
+    font-size: 1.1rem; /* Samakan dengan ukuran ikon di footer */
+    width: auto;
+    height: auto;
+    padding: 0.2rem;
+    color: #005fa3;
+  }
 
-  .top-nav .menu-text {
-    display: none;
-  }
+  .top-nav .menu-text {
+    display: none;
+  }
 
-  .header-title {
-    font-size: 1.1rem;
-    flex-grow: 1;
-  }
+  .header-title {
+    font-size: 1rem; /* Samakan ukuran dengan h3 di footer */
+    flex-grow: 1;
+  }
 
-  header {
-    flex-wrap: wrap;
-    gap: 0.2rem;
-  }
+  header {
+    flex-wrap: wrap;
+    gap: 0.2rem;
+  }
 
-  footer h3 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  .main-content.home-flex {
-      flex-direction: column;
-      align-items: center;
-  }
-  .info-box,.slideshow-box {
-      width: 90%;
-      max-width: 400px;
-  }
+  footer h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .main-content.home-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box,
+  .slideshow-box {
+    width: 90%;
+    max-width: 400px;
+  }
 }
