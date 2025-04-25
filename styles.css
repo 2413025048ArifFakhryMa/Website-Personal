@@ -335,7 +335,7 @@ body.dark-mode .edu-card p {
     .top-nav {
         display: flex;
         justify-content: center; /* Pusatkan menu */
-        gap: 0.5rem; /* Jarak antar ikon lebih kecil */
+        gap: 0.3rem; /* Jarak antar ikon lebih kecil */
         flex: 1;
     }
 
