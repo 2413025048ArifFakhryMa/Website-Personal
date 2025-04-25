@@ -209,10 +209,14 @@ footer {
     align-items: center;
     padding: 1rem 2rem;
     background-color: #d0e7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan seperti header */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 body.dark-mode footer {
     background-color: #2a2a40;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Tambah bayangan untuk mode gelap */
 }
 
 .social-icons {
