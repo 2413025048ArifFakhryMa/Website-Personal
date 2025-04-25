@@ -365,7 +365,6 @@ body.dark-mode .edu-card p {
     .main-content.home-flex {
         flex-direction: column; /* Tampilkan kotak secara vertikal */
         align-items: center; /* Letakkan di tengah halaman */
-        text-align: center;
         margin-top: 1rem;
     }
 
