@@ -337,16 +337,12 @@ body.dark-mode .edu-card p {
     }
 
     .top-nav a {
-        padding: 10px;
-        font-size: 1.5em; /* Besarkan ikon biar jelas */
+        padding: 7.5px;
+        font-size: 0.5em; /* Besarkan ikon biar jelas */
     }
 
     .top-nav {
         display: flex;
         gap: 1rem;
-    }
-
-    .top-nav button#darkToggle {
-        font-size: 1.5em;
     }
 }
