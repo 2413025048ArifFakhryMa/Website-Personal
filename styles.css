@@ -29,12 +29,20 @@ body.dark-mode header {
     background-color: #2a2a40;
 }
 
+.top-nav {
+    display: flex;
+    gap: 0.2rem; /* Mengurangi jarak antar ikon menjadi lebih rapat */
+    justify-content: flex-end; /* Memastikan ikon berada di pojok kanan */
+    align-items: center;
+}
+
 .top-nav a {
-    margin-right: 2rem;
+    margin-right: 0; /* Menghapus margin-right yang tidak perlu */
     text-decoration: none;
     color: #005fa3;
     font-weight: bold;
     transition: color 0.3s;
+    padding: 0.3rem; /* Mengurangi padding agar ikon lebih dekat */
 }
 
 body.dark-mode .top-nav a {
@@ -323,52 +331,52 @@ body.dark-mode .edu-card p {
 
 /*Tampilan Mobile*/
 @media (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
-  }
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 1rem;
+    }
 
-  .header-title {
-    font-size: 1rem; /* Ukuran seperti "Kontak Saya" di footer */
-    flex: 1;
-  }
+    .header-title {
+        font-size: 1rem; /* Ukuran seperti "Kontak Saya" di footer */
+        flex: 1;
+    }
 
-  .top-nav {
-    display: flex;
-    gap: 0.5rem; /* Biar sejajar seperti ikon di footer */
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
+    .top-nav {
+        display: flex;
+        gap: 0.2rem; /* Biar sejajar seperti ikon di footer */
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 
-  .top-nav a,
-  #darkToggle {
-    font-size: 1rem; /* Sesuai dengan ikon di footer */
-    padding: 0.3rem;
-    color: #005fa3;
-  }
+    .top-nav a,
+    #darkToggle {
+        font-size: 1rem; /* Sesuai dengan ikon di footer */
+        padding: 0.3rem;
+        color: #005fa3;
+    }
 
-  .top-nav .menu-text {
-    display: none; /* Hanya tampilkan ikon */
-  }
+    .top-nav .menu-text {
+        display: none; /* Hanya tampilkan ikon */
+    }
 
-  .main-content.home-flex {
-    flex-direction: column; /* Tampilkan kotak secara vertikal */
-    align-items: center; /* Letakkan di tengah halaman */
-    text-align: center;
-    margin-top: 1rem;
-  }
+    .main-content.home-flex {
+        flex-direction: column; /* Tampilkan kotak secara vertikal */
+        align-items: center; /* Letakkan di tengah halaman */
+        text-align: center;
+        margin-top: 1rem;
+    }
 
-  .info-box,
-  .slideshow-box {
-    width: 90%;
-    max-width: 400px;
-  }
+    .info-box,
+    .slideshow-box {
+        width: 90%;
+        max-width: 400px;
+    }
 
-  footer h3 {
-    font-size: 1rem;
-    margin: 0;
-  }
+    footer h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
 }
