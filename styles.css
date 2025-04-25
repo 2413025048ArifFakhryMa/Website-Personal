@@ -333,13 +333,22 @@ body.dark-mode .edu-card p {
     }
 }
 
-/* Menyembunyikan teks menu di layar kecil */
 @media (max-width: 768px) {
-    .top-nav .menu-text {
-        display: none;
-    }
-    .top-nav a {
-        padding: 10px;
-        font-size: 1.2em;
-    }
+    .top-nav .menu-text {
+        display: none; /* Sembunyikan teks menu */
+    }
+
+    .top-nav a {
+        padding: 10px;
+        font-size: 1.5em; /* Besarkan ikon biar jelas */
+    }
+
+    .top-nav {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .top-nav button#darkToggle {
+        font-size: 1.5em;
+    }
 }
