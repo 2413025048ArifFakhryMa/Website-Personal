@@ -323,41 +323,6 @@ body.dark-mode .edu-card p {
 
 /*Tampilan Mobile*/
 @media (max-width: 768px) {
-    /* 1. Menu hanya ikon, rapat di pojok kanan atas */
-    .top-nav {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .top-nav a {
-        font-size: 0; /* Hilangkan teks */
-        margin-right: 0.5rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Sembunyikan elemen teks menu */
-    .top-nav .menu-text {
-        display: none;
-    }
-
-    .top-nav i {
-        font-size: 1.2rem; /* Ukuran ikon */
-    }
-
-    /* Ukuran teks title lebih kecil */
-    .header-title {
-        font-size: 1.1rem;
-    }
-
-    /* Home section di tengah */
-    
-}
-@media (max-width: 768px) {
   .top-nav {
     display: flex;
     justify-content: flex-end;
@@ -380,7 +345,7 @@ body.dark-mode .edu-card p {
   }
 
   .header-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     flex-grow: 1;
   }
 
